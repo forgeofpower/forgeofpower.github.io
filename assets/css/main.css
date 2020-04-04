@@ -1736,10 +1736,6 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 hr { margin: 0.125em 0; }
 
-.page { padding-right: 20px; }
-
-.page__footer { height: 0; font-size: 0; }
-
 .search__toggle { color: #000; }
 
 .navicon { color: #000; background-color: #000; }
@@ -1750,7 +1746,7 @@ hr { margin: 0.125em 0; }
 
 .page__title { border-bottom: 1px solid #baaa92; padding-bottom: 0.5em; }
 
-.page__content p { margin-bottom: .25em; }
+.page__content p { margin-bottom: .5em; }
 
 .page__content h2 { padding-bottom: .25em; }
 
@@ -1768,15 +1764,23 @@ tr:nth-child(odd) { background-color: #e2cba4; }
 
 .traits { margin: -.5em 0 0 0; padding-left: 0; }
 
-.trait { display: inline; background: #5f1616; border: #ceb566 2px solid; color: #fff; padding: 1px 8px; font-size: 0.75em !important; text-transform: uppercase; }
+.trait { display: inline; background: #5f1616; border: #ceb566 2px solid; padding: 1px 8px; font-size: 0.75em !important; text-transform: uppercase; }
+
+.trait > a { text-decoration: none; color: #fff; }
 
 .page__content dl { margin: 0; }
 
 .page__content dl + dl { margin-top: 0.25em; }
 
+.page__content dl + p { margin-top: 0.5em; }
+
 .page__content dt, dd { display: inline; }
 
 dd:after { content: ""; display: block; }
+
+ul li, ol li { margin-bottom: 0; }
+
+ul { margin-block-start: 0; margin-block-end: .5em; }
 
 h1, h2 + .tags { margin: -.5em 0 0 0; }
 
