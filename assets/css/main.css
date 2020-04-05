@@ -1790,4 +1790,10 @@ h3, h4, h5, h6 { margin-top: 1em; }
 
 .alignright { float: right; }
 
+button { background: #ebdeca; border: 2px solid #d6bb92; }
+
+button:hover { background: #f2eadd; }
+
+.roll-me-one blockquote { margin-top: 0.5em; margin-bottom: 0.5em; }
+
 /*# sourceMappingURL=main.css.map */
