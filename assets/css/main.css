@@ -1714,4 +1714,10 @@ button:hover { background: #f2eadd; }
 
 .roll-me-one blockquote { margin-top: 0.5em; margin-bottom: 0.5em; }
 
+aside { float: right; width: 45%; border: 1px solid #baaa92; margin: .5em; padding: .5em; background-color: #d4c095; font-size: 90%; }
+
+aside h2 { margin-top: 0.2em; }
+
+h2 h3 { clear: both; }
+
 /*# sourceMappingURL=main.css.map */
