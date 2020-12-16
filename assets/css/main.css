@@ -1657,15 +1657,13 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .page__title { border-radius: 5px; background-color: #23395B; color: white; padding: .4em; padding-top: .3em; font-variant: small-caps; }
 
-.page__content p { margin-bottom: .25em; }
+.page__content p, .page__content dl { margin: 0 0 .25em 0; }
 
 .page__content h2 { padding-bottom: .25em; border-radius: 5px; background-color: #23395B; color: white; padding: .3em; padding-top: .2em; font-size: 1.4em; font-variant: small-caps; }
 
-.page__content h3 { margin-top: 1em; font-size: 1.25em; }
+.page__content h3 { clear: both; margin-top: 1em; font-size: 1.25em; }
 
-.page__content dl { margin: 0; }
-
-.page__content dl + p { margin-top: .25em; }
+.page__content h4 { margin: 1em 0 .25em 0; font-size: 1em; font-style: italic; }
 
 .page__content dd { font-size: 1em; }
 
@@ -1691,7 +1689,7 @@ body, table { font-size: .8em; }
 
 table { width: auto; }
 
-aside { float: right; width: 45%; border-left: 1px solid #5F1616; margin: 1em; padding: 0 1em; font-size: 90%; color: #5F1616; }
+aside { float: right; width: 45%; border-left: 1px solid #5F1616; margin: .5em 0 .5em 1em; padding: 0 0 0 1em; font-size: 90%; color: #5F1616; }
 
 aside h3 { margin-top: 0; }
 
@@ -1704,6 +1702,8 @@ aside div:last-child { margin-bottom: 0; }
 .power h3 { margin: 0; border-bottom: 1px solid #baaa92; line-height: 24px; }
 
 .power .traits { margin: 0; padding-left: 0; }
+
+.power .tags { margin-bottom: 0; }
 
 .power hr { margin: 0; }
 
