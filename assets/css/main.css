@@ -1661,7 +1661,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .page__content h2 { clear: both; padding-bottom: .25em; border-radius: 5px; background-color: #23395B; color: white; padding: .3em; padding-top: .2em; font-size: 1.4em; font-variant: small-caps; }
 
-.page__content h3 { clear: both; margin-top: 1em; font-size: 1.25em; }
+.page__content h3 { clear: both; margin: 1em 0 0 0; font-size: 1.25em; border-bottom: 1px solid #baaa92; line-height: 24px; }
 
 .page__content h4 { margin: .75em 0 .25em 0; font-size: 1em; font-style: italic; }
 
@@ -1687,11 +1687,11 @@ ul { margin-block-start: 0; margin-block-end: .5em; }
 
 body, table { font-size: .8em; }
 
-table { width: auto; }
+table { width: auto; display: table; border: 1px solid #8c806e; margin-top: 1em; }
 
 aside { float: right; width: 45%; border: 1px solid #8c806e; margin: .5em 0 1em 1em; padding: 1em; font-size: 90%; background-color: #dbc29b; }
 
-aside h3 { margin-top: 0; }
+aside h3 { margin-top: 0 !important; }
 
 aside div:first-child { margin-top: 0; }
 
@@ -1699,7 +1699,7 @@ aside div:last-child { margin-bottom: 0; }
 
 .power, .item { margin: 1.5em 0 0 0; }
 
-.power h3, .item h3 { margin: 0; border-bottom: 1px solid #baaa92; line-height: 24px; }
+.power h3, .item h3 { margin-top: 0; }
 
 .power .traits, .item .traits { margin: 0; padding-left: 0; }
 
