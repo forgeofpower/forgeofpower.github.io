@@ -1705,6 +1705,8 @@ aside div:last-child { margin-bottom: 0; }
 
 .power .tags, .item .tags { margin-bottom: 0; }
 
+.power .tags dt, .item .tags dt { text-transform: capitalize; }
+
 .power hr, .item hr { margin: 0; }
 
 .fluff { font-style: italic; }
