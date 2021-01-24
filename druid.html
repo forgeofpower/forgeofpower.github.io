@@ -559,7 +559,7 @@
     
       <tr>
         <td>
-          <a href="#befriend-animal">Befriend Animal</a>
+          <a href="#command-animal">Command Animal</a>
         </td>
         <td>Novice</td>
         <td>
@@ -567,7 +567,7 @@
             <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
           
         </td>
-        <td>You befriend an animal, making it your trusted companion</td>
+        <td>You befriend and command an animal, making it your trusted companion</td>
       </tr>
     
   
@@ -589,6 +589,21 @@
     
       <tr>
         <td>
+          <a href="#gather-swarm">Gather Swarm</a>
+        </td>
+        <td>Novice</td>
+        <td>
+          
+            <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+          
+        </td>
+        <td>You gather a swarm of tiny animals or spirits that attack at your command</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
           <a href="#goodberry">Goodberry</a>
         </td>
         <td>Novice</td>
@@ -604,15 +619,45 @@
     
       <tr>
         <td>
-          <a href="#magic-acorns">Magic Acorns</a>
+          <a href="#hive-mind">Hive Mind</a>
         </td>
         <td>Novice</td>
         <td>
           
-            <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+            <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
           
         </td>
-        <td>You imbue several small projectiles with the fury of nature</td>
+        <td>You speak telepathically with all nearby animals of a certain type</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
+          <a href="#summon-animal">Summon Animal</a>
+        </td>
+        <td>Novice</td>
+        <td>
+          
+            <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+          
+        </td>
+        <td>You summon a fey spirit that takes the form of a normal animal</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
+          <a href="#summon-fey">Summon Fey</a>
+        </td>
+        <td>Novice</td>
+        <td>
+          
+            <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+          
+        </td>
+        <td>You summon a fey spirit that takes the form of a normal animal</td>
       </tr>
     
   
@@ -649,6 +694,34 @@
     
       <tr>
         <td>
+          <a href="#expert-summoner">Expert Summoner</a>
+        </td>
+        <td>Veteran</td>
+        <td>
+          
+        </td>
+        <td>You can summon spirits that are stronger and more varied than before</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
+          <a href="#insect-plague">Insect Plague</a>
+        </td>
+        <td>Veteran</td>
+        <td>
+          
+            <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+          
+        </td>
+        <td>You fill an area with biting insects that damage and distract enemies</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
           <a href="#instant-tree">Instant Tree</a>
         </td>
         <td>Veteran</td>
@@ -664,6 +737,36 @@
     
       <tr>
         <td>
+          <a href="#tree-stride">Tree Stride</a>
+        </td>
+        <td>Veteran</td>
+        <td>
+          
+            <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+          
+        </td>
+        <td>You can repeatedly teleport between all nearby trees</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
+          <a href="#animal-messenger">Animal Messenger</a>
+        </td>
+        <td>Ribbon</td>
+        <td>
+          
+            <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+          
+        </td>
+        <td>You send an animal to carry a message to a specific distact recipient</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
           <a href="#detect-poison">Detect Poison</a>
         </td>
         <td>Ribbon</td>
@@ -673,6 +776,19 @@
           
         </td>
         <td>You identify and locate any nearby poisons or diseases</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
+          <a href="#friend-of-nature">Friend of Nature</a>
+        </td>
+        <td>Ribbon</td>
+        <td>
+          
+        </td>
+        <td>You naturally have the friendship and trust of animals</td>
       </tr>
     
   
@@ -702,6 +818,18 @@
         </td>
         <td>You can communicate simple concepts with animals</td>
       </tr>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -1338,8 +1466,8 @@
 
 <div class="power">
 
-<h3 id="befriend-animal">
-    Befriend Animal
+<h3 id="command-animal">
+    Command Animal
     
     
     <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
@@ -1392,7 +1520,9 @@
 
 
 
+<!-- 
 
+ -->
 
 
 
@@ -1448,7 +1578,7 @@
         <dd>Your target is on the ground</dd>
     
         <dt>Duration</dt>
-        <dd>Forever</dd>
+        <dd>Sustained, up to 1 hour</dd>
     
     </dl>
     <hr>
@@ -1462,13 +1592,133 @@
   <dt>Success</dt>
   <dd>Your target is <a href="conditions.html#immobilized">immobilized</a></dd>
   <dt>Failure</dt>
-  <dd>Your target is <a href="conditions.html#slowed">slowed</a> until the end of its next turn</dd>
+  <dd>Your target is <a href="conditions.html#slowed">slowed</a></dd>
+</dl>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +1 Mana, the radius increases by 10 feet.</p>
+
+
+
+
+<!-- 
+
+ -->
+
+
+
+</div>
+    
+  
+
+  
+    
+      
+
+<div class="power">
+
+<h3 id="gather-swarm">
+    Gather Swarm
+    
+    
+    <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+    
+    
+    
+    <span class="alignright">Novice</span>
+    
+</h3>
+
+
+<aside>
+<div class="power">
+
+<h3 id="command-swarm">
+    Command Swarm
+    
+    
+    <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
+    
+    
+    
+</h3>
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#attack">Attack</a></span>
+    
+        <span class="trait"><a href="/traits.html#piercing">Piercing</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Range</dt>
+        <dd>30 feet</dd>
+    
+    </dl>
+    <hr />
+
+
+<p>Make a Magic attack roll against your target’s Strength DC.</p>
+
+<dl>
+  <dt>Success</dt>
+  <dd>Your target takes 2d6 damage and is moved up to 15 feet in a direction of your choice</dd>
 </dl>
 
 
 
 
 
+
+
+
+</div>
+</aside>
+
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#spell">Spell</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>1 Mana</dd>
+    
+        <dt>Duration</dt>
+        <dd>1 minute</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>You can use the <strong>Command Swarm</strong> power.</p>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +1 Mana, the damage of <strong>Command Swarm</strong> increases by 1d6.</p>
+
+
+
+
+<!-- 
+
+ -->
 
 
 
@@ -1523,10 +1773,16 @@
 
 <p>Up to 10 berries appear in your hand. A creature can eat a berry (or feed it to an ally) with the <a href="basic-powers.html#interact">Interact</a> power. Eating a berry heals 1 health and provides enough nourishment to sustain a normal human for one day. Any uneaten berries disappear when the duration ends.</p>
 
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +1 Mana, the healing of each berry increases by 1.</p>
 
 
 
 
+<!-- 
+
+ -->
 
 
 
@@ -1540,11 +1796,11 @@
 
 <div class="power">
 
-<h3 id="magic-acorns">
-    Magic Acorns
+<h3 id="hive-mind">
+    Hive Mind
     
     
-    <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+    <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
     
     
     
@@ -1559,7 +1815,162 @@
 
     <ul class="traits">
     
-        <span class="trait"><a href="/traits.html#cantrip">Cantrip</a></span>
+        <span class="trait"><a href="/traits.html#spell">Spell</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>1 Mana</dd>
+    
+        <dt>Range</dt>
+        <dd>100 feet</dd>
+    
+        <dt>Duration</dt>
+        <dd>Sustained, up to 1 hour</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>Choose a species of animal, such as rats, pigeons, or dogs. You have a telepathic link with all animals of that type within range. You know the location of all animals you are linked with, and you can communicate with and understand each other despite not sharing a language. Most animals lack the intelligence to understand sophistical concepts.</p>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +1 Mana, the range doubles.</p>
+
+
+
+
+<!-- 
+
+ -->
+
+
+
+</div>
+    
+  
+
+  
+    
+      
+
+<div class="power">
+
+<h3 id="summon-animal">
+    Summon Animal
+    
+    
+    <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+    
+    
+    
+    <span class="alignright">Novice</span>
+    
+</h3>
+
+
+<aside>
+<div class="power">
+
+<h3 id="eagle-stats">
+    Eagle Stats
+    
+    
+</h3>
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#beast">Beast</a></span>
+    
+        <span class="trait"><a href="/traits.html#spirit">Spirit</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Attributes</dt>
+        <dd>Strength -2, Agilty +2, Intellect -4, Spirit +0</dd>
+    
+        <dt>Other stats</dt>
+        <dd>Health 5, Defense 12, Speed 60 feet (fly), Size -1</dd>
+    
+    </dl>
+    <hr />
+
+
+<p>The eagle adds +6 to Notice rolls that rely on sight instead of its normal modifier.</p>
+
+<p>The eagle can slash with its claws as a <span class="trait"><a href="traits.html#finesse">Finesse</a></span> melee weapon that deals 1d4 <span class="trait"><a href="traits.html#slashing">Slashing</a></span> base damage.</p>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="power">
+
+<h3 id="wolf-stats">
+    Wolf Stats
+    
+    
+</h3>
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#beast">Beast</a></span>
+    
+        <span class="trait"><a href="/traits.html#spirit">Spirit</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Attributes</dt>
+        <dd>Strength +1, Agilty +1, Intellect -4, Spirit -1</dd>
+    
+        <dt>Other stats</dt>
+        <dd>Health 15, Defense 12, Speed 40 feet, Size +0</dd>
+    
+    </dl>
+    <hr />
+
+
+<p>The wolf can bite with its teeth as a melee weapon that deals 1d8 <span class="trait"><a href="traits.html#piercing">Piercing</a></span> base damage.</p>
+
+
+
+
+
+
+
+
+</div>
+</aside>
+
+
+
+
+
+    <ul class="traits">
     
         <span class="trait"><a href="/traits.html#spell">Spell</a></span>
     
@@ -1570,32 +1981,193 @@
     <dl class="tags">
     
         <dt>Cost</dt>
-        <dd>0 Mana</dd>
+        <dd>2 Mana</dd>
     
-        <dt>Target</dt>
-        <dd>Up to 5 acorns, nuts, pinecones, seeds, or similar objects you can reach</dd>
+        <dt>Range</dt>
+        <dd>30 feet</dd>
     
         <dt>Duration</dt>
-        <dd>1 minute</dd>
+        <dd>1 hour</dd>
     
     </dl>
     <hr>
 
 
-<p>The targets are magically enhanced to act as amazing projectiles. These projectiles count as ranged weapons with a base damage of 1d8 <span class="trait"><a href="traits.html#bludgeoning">Bludgeoning</a></span> and a range of 60 feet.</p>
+<p>You summon a <span class="trait"><a href="traits.html#minion">Minion</a></span> eagle or wolf at the target point. Your minion loyally follows all your orders, unless those orders are obviously suicidal. When the spell’s duration ends, your minion fades back into the spirit world.</p>
+
+<p>You are free to describe the species of animal you summon as something other than the type listed, as long as you keep the same stats. For example, you could summon a hawk, owl, or raven using the eagle stats, or you could summon a brown bear, deer, or panther using the wolf stats.</p>
 
 <h4 id="heightened">Heightened</h4>
 
-<p>If you add +1 Mana, all the projectiles gain one of the following effects.</p>
-
-<p><strong><em>Fiery.</em></strong> The projectiles explode with a burst of flame when they hit. On a successful <a href="basic-powers.html#strike">Strike</a>, all creatures in a 5-foot burst around the target take 1d6 <span class="trait"><a href="traits.html#fire">Fire</a></span> damage.</p>
-
-<p><strong><em>Slowing.</em></strong> The projectiles cover their target in sticky sap. On a successful <a href="basic-powers.html#strike">Strike</a>, the target is <a href="conditions.html#slowed">slowed</a> until the end of its next turn.</p>
+<p>For each +1 Mana, your minion’s maximum health increases by 10, and its Strength or Agility increases by 1.</p>
 
 
 
 
+<!-- 
 
+ -->
+
+
+
+</div>
+    
+  
+
+  
+    
+      
+
+<div class="power">
+
+<h3 id="summon-fey">
+    Summon Fey
+    
+    
+    <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+    
+    
+    
+    <span class="alignright">Novice</span>
+    
+</h3>
+
+
+<aside>
+<div class="power">
+
+<h3 id="dryad-stats">
+    Dryad Stats
+    
+    
+</h3>
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#fey">Fey</a></span>
+    
+        <span class="trait"><a href="/traits.html#spirit">Spirit</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Attributes</dt>
+        <dd>Strength -1, Agilty +1, Intellect +1, Spirit +3</dd>
+    
+        <dt>Other stats</dt>
+        <dd>Health 15, Defense 11, Speed 30 feet, Size +0</dd>
+    
+    </dl>
+    <hr />
+
+
+<p>The dryad knows one of the following lists of spells.</p>
+<ul>
+  <li><a href="druid.html#thorn-whip">Thorn Whip</a> and <a href="druid.html#spark-of-growth">Spark of Growth</a></li>
+  <li><a href="occultist.html#suggestion">Suggestion</a> (as an <span class="trait"><a href="traits.html#encounter">Encounter</a></span> power) and <a href="occultist.html#friends">Friends</a></li>
+</ul>
+
+<p>These spells have no Mana cost, but cannot be heightened. The dryad’s Magic stat is equal to its Spirit.</p>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="power">
+
+<h3 id="pixie-stats">
+    Pixie Stats
+    
+    
+</h3>
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#fey">Fey</a></span>
+    
+        <span class="trait"><a href="/traits.html#spirit">Spirit</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Attributes</dt>
+        <dd>Strength -5, Agilty +3, Intellect -2, Spirit +1</dd>
+    
+        <dt>Other stats</dt>
+        <dd>Health 5, Defense 15, Speed 30 feet, Size -3</dd>
+    
+    </dl>
+    <hr />
+
+
+<p>The pixie can cast <a href="illusionist.html#invisibility">Invisibility</a> as an <span class="trait"><a href="traits.html#encounter">Encounter</a></span> power. This spell has no Mana cost, but cannot be heightened.</p>
+
+
+
+
+
+
+
+
+</div>
+</aside>
+
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#spell">Spell</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>2 Mana</dd>
+    
+        <dt>Range</dt>
+        <dd>30 feet</dd>
+    
+        <dt>Duration</dt>
+        <dd>1 hour</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>You summon a <span class="trait"><a href="traits.html#minion">Minion</a></span> dryad or pixie at the target point. Your minion loyally follows all your orders, unless those orders are obviously suicidal. When the spell’s duration ends, your minion fades back into the spirit world.</p>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +1 Mana, your minion’s maximum health increases by 10, and its Agility or Spirit increases by 1.</p>
+
+
+
+
+<!-- 
+
+ -->
 
 
 
@@ -1645,8 +2217,8 @@
         <dt>Cost</dt>
         <dd>0 Mana</dd>
     
-        <dt>Range</dt>
-        <dd>30 feet</dd>
+        <dt>Area</dt>
+        <dd>30-foot cone</dd>
     
     </dl>
     <hr>
@@ -1658,7 +2230,7 @@
   <dt>Critical Success</dt>
   <dd>Double damage</dd>
   <dt>Success</dt>
-  <dd>Your target takes 2d6 damage and is pulled up to 10 feet towards you</dd>
+  <dd>Your target takes 1d6 damage and is pulled up to 10 feet towards you</dd>
 </dl>
 
 <h4 id="heightened">Heightened</h4>
@@ -1668,7 +2240,9 @@
 
 
 
+<!-- 
 
+ -->
 
 
 
@@ -1723,12 +2297,203 @@
 
 <p>Your target becomes sentient, gaining intelligence as an <a href="awakened.html">Awakened</a>. Your target’s form morphs to become more humanoid: they gain the proper limbs, can breathe air, gain opposable thumbs, can speak humanoid language, and so on.</p>
 
-<p>After the transformation, your target is usually friendly towards you, though they may be shocked by the sudden change. If your target was loyal to you before the transformation, they act as a <span class="trait"><a href="traits.html#minion">Minion</a></span> loyal to you for the next hour, after which they become a normal NPC.</p>
+<p>After the transformation, your target is usually friendly towards you, though they may be shocked by the sudden change. If your target was helpful to you before the transformation, they act as a <span class="trait"><a href="traits.html#minion">Minion</a></span> loyal to you for the next hour, after which they become a normal NPC.</p>
+
+
+
+
+<!-- 
+
+ -->
+
+
+
+</div>
+    
+  
+
+  
+    
+      
+
+<div class="power">
+
+<h3 id="expert-summoner">
+    Expert Summoner
+    
+    
+    
+    
+    <span class="alignright">Veteran</span>
+    
+</h3>
 
 
 
 
 
+
+
+
+    <dl class="tags">
+    
+        <dt>Prerequisites</dt>
+        <dd>Summon Animal or Summon Fey</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>When you cast <a href="druid.html#summon-animal">Summon Animal</a>, you can choose for your minion to gain two of the following abilities.</p>
+
+<p><strong><em>Megafauna.</em></strong> Your minion has +1 Size, +5 feet reach, and +2 Strength.</p>
+
+<p><strong><em>Natural Armor.</em></strong> Your minion has +2 Defense and +10 Health.</p>
+
+<p><strong><em>Trip Attack.</em></strong> When your minion suceeds on a <a href="basic-powers.html#strike">Strike</a>, their target falls <a href="conditions.html#prone">prone</a>.</p>
+
+<p><strong><em>Wild Speed.</em></strong> Your minion has +20 feet Speed and +2 Agility.</p>
+
+<p>When you cast <a href="druid.html#summon-fey">Summon Fey</a>, you can choose for your minion to gain two of the following abilities.</p>
+
+<p><strong><em>Fascinating.</em></strong> Your minion gains the <a href="feats-skill.html#fascinating-performance">Fascinating Performance</a> skill feat.</p>
+
+<p><strong><em>Fey Magic.</em></strong> Your minion learns a Novice <span class="trait"><a href="traits.html#cantrip">Cantrip</a></span> talent of your choice.</p>
+
+<p><strong><em>Hover.</em></strong> Your minion has +10 Speed and can fly up to 20 feet above the ground.</p>
+
+<p><strong><em>Tricksy.</em></strong> Your minion has +1 Defense, +1 Agility, and +1 Spirit.</p>
+
+
+
+
+<!-- 
+
+ -->
+
+
+
+</div>
+    
+  
+
+  
+    
+      
+
+<div class="power">
+
+<h3 id="insect-plague">
+    Insect Plague
+    
+    
+    <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+    
+    
+    
+    <span class="alignright">Veteran</span>
+    
+</h3>
+
+
+<aside>
+<div class="power">
+
+<h3 id="insect-bites">
+    Insect Bites
+    
+    
+    <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
+    
+    
+    
+</h3>
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#attack">Attack</a></span>
+    
+        <span class="trait"><a href="/traits.html#piercing">Piercing</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Target</dt>
+        <dd>One creature in the area of <strong>Insect Plague</strong></dd>
+    
+    </dl>
+    <hr />
+
+
+<p>Make a Magic attack roll against your target’s Strength DC.</p>
+
+<dl>
+  <dt>Success</dt>
+  <dd>Your target takes 5d6 damage and is <a href="conditions.html#dazzled">dazzled</a> and <a href="conditions.html#slowed">slowed</a></dd>
+  <dt>Failure</dt>
+  <dd>Half damage</dd>
+</dl>
+
+
+
+
+
+
+
+
+</div>
+</aside>
+
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#spell">Spell</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>5 Mana</dd>
+    
+        <dt>Range</dt>
+        <dd>60 feet</dd>
+    
+        <dt>Area</dt>
+        <dd>20-foot burst</dd>
+    
+        <dt>Duration</dt>
+        <dd>Sustained, up to 10 minutes</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>You conjure a swarm of insects in the spell’s area. The area of the swarm is difficult terrain. When you sustain this spell, you can move the swarm up to 30 feet in any direction.</p>
+
+<p>You can use the <strong>Insect Bites</strong> power.</p>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +1 Mana, the damage of <strong>Insect Bites</strong> increases by 1d6.</p>
+
+
+
+
+<!-- 
+
+ -->
 
 
 
@@ -1806,7 +2571,9 @@
 
 
 
+<!-- 
 
+ -->
 
 
 <div class="fluff"><p>We can never forget the Treeagle incident of 2015.</p>
@@ -1819,6 +2586,118 @@
 
   
     
+      
+
+<div class="power">
+
+<h3 id="tree-stride">
+    Tree Stride
+    
+    
+    <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+    
+    
+    
+    <span class="alignright">Veteran</span>
+    
+</h3>
+
+
+<aside>
+<div class="power">
+
+<h3 id="tree-step">
+    Tree Step
+    
+    
+    <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
+    
+    
+    
+</h3>
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#teleportation">Teleportation</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Requirements</dt>
+        <dd>You are adjacent to a tree</dd>
+    
+    </dl>
+    <hr />
+
+
+<p>Choose a tree within the range of <strong>Tree Stride</strong>. You teleport to an empty space adjacent to that tree.</p>
+
+
+
+
+
+
+
+
+</div>
+</aside>
+
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#spell">Spell</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>3 Mana</dd>
+    
+        <dt>Range</dt>
+        <dd>200 feet</dd>
+    
+        <dt>Duration</dt>
+        <dd>1 minute</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>You know the exact location of all trees within range. You can use the <strong>Tree Step</strong> power.</p>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>If you add +1 Mana, the duration increases to 1 hour.</p>
+
+<p>If you add +1 Mana, the range increases to 500 feet.</p>
+
+
+
+
+<!-- 
+
+ -->
+
+
+
+</div>
+    
+  
+
+  
+    
   
 
   
@@ -1827,6 +2706,26 @@
 
   
     
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2486,6 +3385,100 @@
 
   
     
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+      
+
+<div class="power">
+
+<h3 id="animal-messenger">
+    Animal Messenger
+    
+    
+    <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+    
+    
+    
+    <span class="alignright">Ribbon</span>
+    
+</h3>
+
+
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#ritual">Ritual</a></span>
+    
+        <span class="trait"><a href="/traits.html#spell">Spell</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>2 Mana</dd>
+    
+        <dt>Range</dt>
+        <dd>30 feet</dd>
+    
+        <dt>Requirements</dt>
+        <dd>Your target is an animal of Size -2 or smaller that is not hostile towards you</dd>
+    
+        <dt>Duration</dt>
+        <dd>1 day, or until the message is delivered</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>Specify a location that you have visited or that you know how to reach, and describe a recipient there. Also speak a short message, up to 25 words. Your target begins to travel to the specified location and searches for the specified recipient. If your target finds someone matching the given description, they deliver your message, replicating the sound of your voice. A flying animal can travel up to 50 miles per day, other animals travel up to 25 miles per day.</p>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +1 Mana, the duration increases by 1 day.</p>
+
+
+
+
+<!-- 
+
+ -->
+
+
+
+</div>
+    
+  
+
+  
+    
       
 
 <div class="power">
@@ -2523,18 +3516,59 @@
         <dd>1 Mana</dd>
     
         <dt>Area</dt>
-        <dd>30-foot burst</dd>
+        <dd>30-foot emanation</dd>
     
     </dl>
     <hr>
 
 
-<p>You detect all poisons, poisonous creatures, diseases, and diseased creatures in the area. You sense the precise location and the exact type of poison or disease.</p>
+<p>You detect all poisons, poisonous creatures, diseases, and diseased creatures in the area. You sense the precise location and the exact type of each poison or disease.</p>
+
+
+
+
+<!-- 
+
+ -->
+
+
+
+</div>
+    
+  
+
+  
+    
+      
+
+<div class="power">
+
+<h3 id="friend-of-nature">
+    Friend of Nature
+    
+    
+    
+    
+    <span class="alignright">Ribbon</span>
+    
+</h3>
 
 
 
 
 
+
+
+
+
+<p>Animals and intelligent plants tend to like you. Unless given reason to act otherwise, they will treat you as a trusted friend or ally, and are helpful towards you. If you have some way to speak with animals, you can usually get them to perform simple favors for you.</p>
+
+
+
+
+<!-- 
+
+ -->
 
 
 
@@ -2603,7 +3637,9 @@
 
 
 
+<!-- 
 
+ -->
 
 
 
@@ -2646,12 +3682,26 @@
 
 
 
+<!-- 
 
+ -->
 
 
 
 </div>
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   

@@ -1715,6 +1715,12 @@ aside div:last-child { margin-bottom: 0; }
 
 .trait > a { text-decoration: none; color: #fff; }
 
+.specialize { border-collapse: separate; border-spacing: .5em 0; border: none; margin-left: -.5em; margin-right: -.5em; }
+
+.specialize td, .specialize th { border: 1px solid #8c806e; }
+
+.specialize td { border-top: none; }
+
 .inline-icon { height: 1.3em; margin-top: -0.2em; }
 
 .alignright { float: right; }
