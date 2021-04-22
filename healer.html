@@ -789,6 +789,8 @@
     
   
     
+  
+    
       <tr>
         <td>
           <a href="#aid">Aid</a>
@@ -980,6 +982,49 @@
           
         </td>
         <td>You channel divine energy to greatly buff a spell you cast</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
+          <a href="#consecrate">Consecrate</a>
+        </td>
+        <td>Master</td>
+        <td>
+          
+            <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+          
+        </td>
+        <td>You imbue an area with sacred magic that affects creatures inside</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
+          <a href="#holy-aura">Holy Aura</a>
+        </td>
+        <td>Master</td>
+        <td>
+          
+            <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+          
+        </td>
+        <td>You shine with an aura that protects all your allies from harm</td>
+      </tr>
+    
+  
+    
+      <tr>
+        <td>
+          <a href="#panacea">Panacea</a>
+        </td>
+        <td>Master</td>
+        <td>
+          
+        </td>
+        <td>Your healing cures a creature of any and all negative conditions</td>
       </tr>
     
   
@@ -2140,6 +2185,12 @@
   
     
   
+    
+  
+    
+  
+    
+  
 
   
     <h2>Veteran Talents</h2>
@@ -2256,113 +2307,6 @@
 </summary>
 
 
-<aside>
-    
-<div class="power">
-
-<h3 id="blinding-light">
-    Blinding Light
-    
-    
-    <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
-    
-    
-    
-</h3>
-
-
-
-
-    <ul class="traits">
-    
-        <span class="trait"><a href="/traits.html#attack">Attack</a></span>
-    
-        <span class="trait"><a href="/traits.html#light">Light</a></span>
-    
-    </ul>
-
-
-
-    <dl class="tags">
-    
-        <dt>Target</dt>
-        <dd>One creature in the area of <strong>Daylight</strong></dd>
-    
-        <dt>Duration</dt>
-        <dd>Varies</dd>
-    
-    </dl>
-    <hr />
-
-
-<p>Make a Magic attack roll against your target’s Strength DC.</p>
-
-<dl>
-  <dt>Critical Success</dt>
-  <dd>Your target is <a href="conditions.html#blinded">blinded</a> for 1 minute</dd>
-  <dt>Success</dt>
-  <dd>Your target is <a href="conditions.html#blinded">blinded</a> until the end of their next turn</dd>
-  <dt>Failure</dt>
-  <dd>Your target is <a href="conditions.html#dazzled">dazzled</a> until the end of their next turn</dd>
-</dl>
-
-
-
-
-
-
-
-
-</div>
-
-<div class="power">
-
-<h3 id="warding-light">
-    Warding Light
-    
-    
-    <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg" />
-    
-    
-    
-</h3>
-
-
-
-
-    <ul class="traits">
-    
-        <span class="trait"><a href="/traits.html#light">Light</a></span>
-    
-    </ul>
-
-
-
-    <dl class="tags">
-    
-        <dt>Target</dt>
-        <dd>One creature in the area of <strong>Daylight</strong></dd>
-    
-        <dt>Trigger</dt>
-        <dd>An enemy attacks your target</dd>
-    
-    </dl>
-    <hr />
-
-
-<p>The triggering attack has disadvantage.</p>
-
-
-
-
-
-
-
-
-</div>
-
-</aside>
-
 
 <div class="power-body">
 
@@ -2397,7 +2341,7 @@
 
 <p>The spell’s area is filled with sunlight. It shines bright light out to a distance of 60 feet and dim light out to a distance of 120 feet.</p>
 
-<p>You can use the <strong>Blinding Light</strong> and <strong>Warding Light</strong> powers.</p>
+<p>You can use the <strong>Blinding Light</strong>, <strong>Sunbeam</strong>, and <strong>Warding Light</strong> powers.</p>
 
 <h4 id="heightened">Heightened</h4>
 
@@ -2406,6 +2350,204 @@
 
 
 
+
+<div class="tabset">
+    
+    <input
+        type="radio"
+        name="Daylight tabs"
+        id="Daylight - Blinding Light"
+        hidden
+        checked
+    >
+    
+    <input
+        type="radio"
+        name="Daylight tabs"
+        id="Daylight - Sunbeam"
+        hidden
+        
+    >
+    
+    <input
+        type="radio"
+        name="Daylight tabs"
+        id="Daylight - Warding Light"
+        hidden
+        
+    >
+    
+    <ul hidden aria-hidden="true">
+        
+        <li><label for="Daylight - Blinding Light">
+            <div class="subpower-title">
+                Blinding Light
+                
+                
+                <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+                
+                
+            </div>
+        </label></li>
+        
+        <li><label for="Daylight - Sunbeam">
+            <div class="subpower-title">
+                Sunbeam
+                
+                
+                <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+                
+                
+            </div>
+        </label></li>
+        
+        <li><label for="Daylight - Warding Light">
+            <div class="subpower-title">
+                Warding Light
+                
+                
+                <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg">
+                
+                
+            </div>
+        </label></li>
+        
+    </ul>
+    <div>
+        
+        <section>
+            <h2>Blinding Light</h2>
+            
+
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#attack">Attack</a></span>
+    
+        <span class="trait"><a href="/traits.html#light">Light</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Target</dt>
+        <dd>One creature in the area of <strong>Daylight</strong></dd>
+    
+        <dt>Duration</dt>
+        <dd>Varies</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>Make a Magic attack roll against your target’s Strength DC.</p>
+
+<dl>
+  <dt>Critical Success</dt>
+  <dd>Your target is <a href="conditions.html#blinded">blinded</a> for 1 minute</dd>
+  <dt>Success</dt>
+  <dd>Your target is <a href="conditions.html#blinded">blinded</a> until the end of their next turn</dd>
+  <dt>Failure</dt>
+  <dd>Your target is <a href="conditions.html#dazzled">dazzled</a> until the end of their next turn</dd>
+</dl>
+
+
+
+
+
+
+
+        </section>
+        
+        <section>
+            <h2>Sunbeam</h2>
+            
+
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#attack">Attack</a></span>
+    
+        <span class="trait"><a href="/traits.html#light">Light</a></span>
+    
+        <span class="trait"><a href="/traits.html#radiant">Radiant</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Target</dt>
+        <dd>One creature in the area of <strong>Daylight</strong></dd>
+    
+    </dl>
+    <hr>
+
+
+<p>Make a Magic attack roll against your target’s Strength DC.</p>
+
+<dl>
+  <dt>Success</dt>
+  <dd>Your target takes 4d6 damage</dd>
+</dl>
+
+
+
+
+
+
+
+        </section>
+        
+        <section>
+            <h2>Warding Light</h2>
+            
+
+
+
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#light">Light</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Target</dt>
+        <dd>One creature in the area of <strong>Daylight</strong></dd>
+    
+        <dt>Trigger</dt>
+        <dd>An enemy attacks your target</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>The triggering attack has disadvantage.</p>
+
+
+
+
+
+
+
+        </section>
+        
+    </div>
+</div>
 
 
 
@@ -2684,6 +2826,12 @@
   
     
   
+    
+  
+    
+  
+    
+  
 
   
     <h2>Master Talents</h2>
@@ -2713,6 +2861,223 @@
   
     
   
+    
+  
+    
+      
+
+<div class="power">
+
+<details>
+<summary>
+    <h3 id="consecrate">
+        Consecrate
+        
+        
+        <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+        
+        
+        
+    </h3>
+
+    <div class="fluff">
+        <p>You imbue an area with sacred magic that affects creatures inside</p>
+
+    </div>
+</summary>
+
+
+
+<div class="power-body">
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#ritual">Ritual</a></span>
+    
+        <span class="trait"><a href="/traits.html#spell">Spell</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Range</dt>
+        <dd>30 feet</dd>
+    
+        <dt>Area</dt>
+        <dd>60-foot burst</dd>
+    
+        <dt>Duration</dt>
+        <dd>Forever</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>Choose two effects from the list below. You can choose for each effect to include or exclude certain types of creatures, such as creatures that follow a specific diety or creatures of a specific race. Your GM may let you make up your own effects.</p>
+
+<p>If an effect asks for a roll, a creature can only attempt the roll once per turn. On a success, the creature is immune to that effect for an hour.</p>
+
+<p><strong><em>Binding.</em></strong> Creatures must succeed on a Spirit roll to leave the area.</p>
+
+<p><strong><em>Courage.</em></strong> Creatures in the area are immune to <span class="trait"><a href="traits.html#fear">Fear</a></span> effects.</p>
+
+<p><strong><em>Destruction.</em></strong> Creatures in the area take 2d6 <span class="trait"><a href="traits.html#radiant">Radiant</a></span> damage at the start of each of their turns.</p>
+
+<p><strong><em>Exclusion.</em></strong> Creatures must succeed on a Spirit roll to enter the area.</p>
+
+<p><strong><em>Fear.</em></strong> Creatures in the area must succeed on a Spirit roll or be <a href="conditions.html#terrified">terrified</a> of the area.</p>
+
+<p><strong><em>Hinderance.</em></strong> Creatures in the area must succeed on a Spirit roll or be <a href="conditions.html#dazzled">dazzled</a>.</p>
+
+<p><strong><em>Protection.</em></strong> Creatures in the area have 10 Shield against one damage type.</p>
+
+<p><strong><em>Vulnerability.</em></strong> Creatures in the area have 10 Weakness against one damage type.</p>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +2 Mana, you can choose another effect.</p>
+
+
+
+
+
+
+
+
+</div>
+</details>
+</div>
+    
+  
+    
+      
+
+<div class="power">
+
+<details>
+<summary>
+    <h3 id="holy-aura">
+        Holy Aura
+        
+        
+        <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+        
+        
+        
+    </h3>
+
+    <div class="fluff">
+        <p>You shine with an aura that protects all your allies from harm</p>
+
+    </div>
+</summary>
+
+
+
+<div class="power-body">
+
+
+    <ul class="traits">
+    
+        <span class="trait"><a href="/traits.html#spell">Spell</a></span>
+    
+    </ul>
+
+
+
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>8 Mana</dd>
+    
+        <dt>Area</dt>
+        <dd>30-foot emanation, which follows you for the duration</dd>
+    
+        <dt>Duration</dt>
+        <dd>Sustained, up to 1 minute</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>Attacks have disadvantage against your allies in the area (including you).</p>
+
+<p>When you use this power, choose one of the following effects.</p>
+
+<p><strong><em>Hope.</em></strong> Your allies in the area are immune to harmful <span class="trait"><a href="traits.html#emotion">Emotion</a></span> effects.</p>
+
+<p><strong><em>Purity.</em></strong> Your allies in the area have 10 <span class="trait"><a href="traits.html#poison">Poison</a></span> Shield and 10 <span class="trait"><a href="traits.html#necrotic">Necrotic</a></span> Shield.</p>
+
+<p><strong><em>Vitality.</em></strong> At the start of each of your turns, your allies in the area heal 1d6 health.</p>
+
+<h4 id="heightened">Heightened</h4>
+
+<p>For each +2 Mana, you can choose another effect.</p>
+
+
+
+
+
+
+
+
+</div>
+</details>
+</div>
+    
+  
+    
+      
+
+<div class="power">
+
+<details>
+<summary>
+    <h3 id="panacea">
+        Panacea
+        
+        
+        
+        
+    </h3>
+
+    <div class="fluff">
+        <p>Your healing cures a creature of any and all negative conditions</p>
+
+    </div>
+</summary>
+
+
+
+<div class="power-body">
+
+
+
+
+    <dl class="tags">
+    
+        <dt>Prerequisites</dt>
+        <dd>Heal</dd>
+    
+    </dl>
+    <hr>
+
+
+<p>When you use your <a href="healer.html#heal">Heal</a> power on a willing creature, you learn all powers currently affecting your target, and you can immediately end any number of those powers.</p>
+
+
+
+
+
+
+
+
+</div>
+</details>
+</div>
     
   
     
@@ -2766,10 +3131,22 @@
   
     
   
+    
+  
+    
+  
+    
+  
 
   
     <h2>Ribbons</h2>
   
+  
+    
+  
+    
+  
+    
   
     
   
