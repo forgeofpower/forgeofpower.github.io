@@ -1689,7 +1689,7 @@ body, table { font-size: .8em; }
 
 table { width: auto; display: table; border: 1px solid #8c806e; margin-top: 1em; }
 
-aside { float: right; width: 45%; font-size: 90%; border: 1px solid #8c806e; background-color: #dbc29b; margin: .5em 0 1em 1em; padding: 1em; }
+aside { float: right; width: 45%; font-size: 90%; border: 1px solid #8c806e; border-radius: 0.25em; background-color: #dbc29b; margin: .5em 0 1em 1em; padding: 1em; }
 
 aside h3 { margin-top: 0 !important; }
 
