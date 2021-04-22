@@ -1689,7 +1689,7 @@ body, table { font-size: .8em; }
 
 table { width: auto; display: table; border: 1px solid #8c806e; margin-top: 1em; }
 
-aside { float: right; width: 45%; border: 1px solid #8c806e; margin: .5em 0 1em 1em; padding: 1em; font-size: 90%; background-color: #dbc29b; }
+aside { float: right; width: 45%; font-size: 90%; border: 1px solid #8c806e; background-color: #dbc29b; margin: .5em 0 1em 1em; padding: 1em; }
 
 aside h3 { margin-top: 0 !important; }
 
@@ -1697,9 +1697,17 @@ aside div:first-child { margin-top: 0; }
 
 aside div:last-child { margin-bottom: 0; }
 
-.power, .item { margin: 1.5em 0 0 0; }
+.power, .item { overflow: hidden; margin: .5em 0 0 0; }
 
-.power h3, .item h3 { margin-top: 0; }
+.power summary, .item summary { padding: 0 .25em; overflow: hidden; list-style: none; }
+
+.power summary ::marker, .power summary ::-webkit-details-marker, .item summary ::marker, .item summary ::-webkit-details-marker { display: none; }
+
+.power summary:hover, .item summary:hover { background-color: #ffffff33; box-shadow: 0 0 0 1px #5F1616 inset; }
+
+.power .power-body, .item .power-body { border-left: 1px solid #5F1616; padding-left: .75em; margin: 0 .4em; }
+
+.power h3, .item h3 { margin-top: .5em; }
 
 .power .traits, .item .traits { margin: 0; padding-left: 0; }
 
@@ -1730,5 +1738,69 @@ aside div:last-child { margin-bottom: 0; }
 button { background: #ebdeca; border: 2px solid #d6bb92; }
 
 button:hover { background: #f2eadd; }
+
+.tabset { margin: 1em 0 .25em 0; }
+
+.tabset > input { display: block; /* "enable" hidden elements in IE/edge */ position: absolute; /* then hide them off-screen */ left: -100%; }
+
+.tabset > ul { padding: 0; position: relative; z-index: 999; list-style: none; display: flex; margin-bottom: -1px; }
+
+.tabset > ul label, .tabset > div { border: 1px solid #8c806e; }
+
+.tabset > ul label { display: inline-block; padding: 0 1em; background: #e4cfaf; border-right-width: 0; margin: 0; font-weight: bold; }
+
+.tabset > ul label .subpower-title { font-size: 1.1em; padding: 0.25em 1em; }
+
+.tabset > ul li:first-child label { border-radius: 0.25em 0 0 0; }
+
+.tabset > ul li:last-child label { border-right-width: 1px; border-radius: 0 0.25em 0 0; }
+
+.tabset > div { position: relative; background: #dbc29b; border-radius: 0 0.25em 0.25em 0.25em; }
+
+.tabset > input:nth-child(1):checked ~ ul li:nth-child(1) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(2):checked ~ ul li:nth-child(2) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(3):checked ~ ul li:nth-child(3) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(4):checked ~ ul li:nth-child(4) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(5):checked ~ ul li:nth-child(5) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(6):checked ~ ul li:nth-child(6) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(7):checked ~ ul li:nth-child(7) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(8):checked ~ ul li:nth-child(8) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(9):checked ~ ul li:nth-child(9) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > input:nth-child(10):checked ~ ul li:nth-child(10) label { background: #dbc29b; border-bottom-color: #dbc29b; }
+
+.tabset > div > section, .tabset > div > section h2 { position: absolute; top: -999em; left: -999em; }
+
+.tabset > div > section { padding: 0 1em; }
+
+.tabset > input:nth-child(1):checked ~ div > section:nth-child(1) { position: static; }
+
+.tabset > input:nth-child(2):checked ~ div > section:nth-child(2) { position: static; }
+
+.tabset > input:nth-child(3):checked ~ div > section:nth-child(3) { position: static; }
+
+.tabset > input:nth-child(4):checked ~ div > section:nth-child(4) { position: static; }
+
+.tabset > input:nth-child(5):checked ~ div > section:nth-child(5) { position: static; }
+
+.tabset > input:nth-child(6):checked ~ div > section:nth-child(6) { position: static; }
+
+.tabset > input:nth-child(7):checked ~ div > section:nth-child(7) { position: static; }
+
+.tabset > input:nth-child(8):checked ~ div > section:nth-child(8) { position: static; }
+
+.tabset > input:nth-child(9):checked ~ div > section:nth-child(9) { position: static; }
+
+.tabset > input:nth-child(10):checked ~ div > section:nth-child(10) { position: static; }
+
+.tabset > ul label { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
 /*# sourceMappingURL=main.css.map */
