@@ -1705,8 +1705,6 @@ aside div:last-child { margin-bottom: 0; }
 
 .power summary:hover, .item summary:hover { background-color: #ffffff33; box-shadow: 0 0 0 1px #5F1616 inset; }
 
-.power .power-body, .item .power-body { border-left: 1px solid #5F1616; padding-left: .75em; margin: 0 .4em; }
-
 .power h3, .item h3 { margin-top: .5em; }
 
 .power .traits, .item .traits { margin: 0; padding-left: 0; }
@@ -1717,11 +1715,13 @@ aside div:last-child { margin-bottom: 0; }
 
 .power hr, .item hr { margin: 0; }
 
+.power-body { border-left: 0.25em solid #5F1616; padding-left: .75em; margin: .25em .4em; }
+
 .fluff { font-style: italic; }
 
-.trait { display: inline; background: #5F1616; border: #ceb566 2px solid; padding: 1px 8px; font-size: 0.75em !important; text-transform: uppercase; }
+.trait { display: inline; padding: 0px 6px; font-size: 0.8em !important; text-transform: uppercase; background: #e7c48b; border: #5F1616 1px solid; font-weight: bold; }
 
-.trait > a { text-decoration: none; color: #fff; }
+.trait > a { text-decoration: none; color: #000; }
 
 .specialize { border-collapse: separate; border-spacing: .5em 0; border: none; margin-left: -.5em; margin-right: -.5em; }
 
