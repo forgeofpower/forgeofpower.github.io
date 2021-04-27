@@ -1697,13 +1697,17 @@ aside div:first-child { margin-top: 0; }
 
 aside div:last-child { margin-bottom: 0; }
 
+summary { overflow: hidden; list-style: none; }
+
+summary ::marker, summary ::-webkit-details-marker { display: none; }
+
+summary h4 { margin-top: .25em !important; }
+
+summary:hover { background-color: #ffffff33; box-shadow: 0 0 0 1px #5F1616 inset; }
+
 .power, .item { overflow: hidden; margin: .5em 0 0 0; }
 
-.power summary, .item summary { padding: 0 .25em; overflow: hidden; list-style: none; }
-
-.power summary ::marker, .power summary ::-webkit-details-marker, .item summary ::marker, .item summary ::-webkit-details-marker { display: none; }
-
-.power summary:hover, .item summary:hover { background-color: #ffffff33; box-shadow: 0 0 0 1px #5F1616 inset; }
+.power summary, .item summary { padding: 0 .25em; }
 
 .power h3, .item h3 { margin-top: .5em; }
 
