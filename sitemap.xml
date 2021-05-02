@@ -34,7 +34,13 @@
 <loc>/conditions.html</loc>
 </url>
 <url>
-<loc>/equipment.html</loc>
+<loc>/equipment-combat.html</loc>
+</url>
+<url>
+<loc>/equipment-lifestyle.html</loc>
+</url>
+<url>
+<loc>/equipment-misc.html</loc>
 </url>
 <url>
 <loc>/feats-ancestry.html</loc>

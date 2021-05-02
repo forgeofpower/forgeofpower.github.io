@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Equipment - Forge of Power</title>
+<!-- begin _includes/seo.html --><title>Combat Items - Forge of Power</title>
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Forge of Power">
-<meta property="og:title" content="Equipment">
-<meta property="og:url" content="/equipment.html">
+<meta property="og:title" content="Combat Items">
+<meta property="og:url" content="/equipment-combat.html">
 
 
 
@@ -32,7 +32,7 @@
 
 
 
-<link rel="canonical" href="/equipment.html">
+<link rel="canonical" href="/equipment-combat.html">
 
 
 
@@ -354,12 +354,37 @@
     
       <li>
         
-          
-          
-
-          <a href="/equipment.html"><span class="nav__sub-title">Equipment</span></a>
+          <span class="nav__sub-title">Equipment</span>
         
 
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/equipment-combat.html" class="active">Combat Items</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/equipment-lifestyle.html" class="">Lifestyle Costs</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/equipment-misc.html" class="">Miscellaneous Items</a></li>
+          
+        </ul>
         
       </li>
     
@@ -393,7 +418,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Equipment">
+    <meta itemprop="headline" content="Combat Items">
     
     
     
@@ -401,7 +426,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Equipment
+          <h1 id="page-title" class="page__title" itemprop="headline">Combat Items
 </h1>
           
         </header>
@@ -409,13 +434,15 @@
 
       <section class="page__content" itemprop="text">
         
-        
+        <p>You can buy low-quality apparel and weapons at half price. Low-quality items have the <span class="trait"><a href="traits.html#fragile">Fragile</a></span> trait. Low-quality apparel breaks if an attack critically succeeds against your defense. Low-quality weapons break if you critically fail a Strike or spell attack using them.</p>
 
 <h2 id="apparel">Apparel</h2>
 
 <table>
   <tr>
     <th>Name</th>
+    <th>Cost</th>
+    <th>Weight</th>
     <th>Description</th>
   </tr>
   
@@ -423,6 +450,8 @@
       <td>
         <a href="#beast-hide">Beast Hide</a>
       </td>
+      <td>2 gp</td>
+      <td>12 lb.</td>
       <td>Thick hides or leathers that insulate and protect</td>
     </tr>
   
@@ -430,6 +459,8 @@
       <td>
         <a href="#chain-mail">Chain Mail</a>
       </td>
+      <td>8 gp</td>
+      <td>55 lb.</td>
       <td>A heavy outfit made of interlocked metal rings</td>
     </tr>
   
@@ -437,27 +468,35 @@
       <td>
         <a href="#plate-armor">Plate Armor</a>
       </td>
+      <td>20 gp</td>
+      <td>40 lb.</td>
       <td>A set of armor made of sturdy metal plates</td>
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="#common-clothes">Common Clothes</a>
+      </td>
+      <td>5 sp</td>
+      <td>3 lb.</td>
+      <td>Normal clothing that regular people wear</td>
     </tr>
   
     <tr>
       <td>
         <a href="#leather-armor">Leather Armor</a>
       </td>
+      <td>2 gp</td>
+      <td>10 lb.</td>
       <td>Hardened leather that helps to deflect attacks</td>
-    </tr>
-  
-    <tr>
-      <td>
-        <a href="#light-clothing">Light Clothing</a>
-      </td>
-      <td>Normal clothing that regular people wear</td>
     </tr>
   
     <tr>
       <td>
         <a href="#monk-robes">Monk Robes</a>
       </td>
+      <td>2 gp</td>
+      <td>2 lb.</td>
       <td>Wrappings or robes that offer complete flexibility</td>
     </tr>
   
@@ -465,6 +504,8 @@
       <td>
         <a href="#mage-armor">Mage Armor</a>
       </td>
+      <td>10 gp</td>
+      <td>20 lb.</td>
       <td>Light armor enchanted to better protect the wearer</td>
     </tr>
   
@@ -472,6 +513,8 @@
       <td>
         <a href="#tinkerer-s-vest">Tinkerer's Vest</a>
       </td>
+      <td>2 gp</td>
+      <td>5 lb.</td>
       <td>A reinforced lab coat or set of overalls for field-testing</td>
     </tr>
   
@@ -479,13 +522,17 @@
       <td>
         <a href="#wizard-robes">Wizard Robes</a>
       </td>
+      <td>5 gp</td>
+      <td>10 lb.</td>
       <td>Long arcane robes that conduct magical energy</td>
     </tr>
   
     <tr>
       <td>
-        <a href="#fine-clothing">Fine Clothing</a>
+        <a href="#fine-clothes">Fine Clothes</a>
       </td>
+      <td>15 gp</td>
+      <td>6 lb.</td>
       <td>Fancy, high-quality clothes meant to impress</td>
     </tr>
   
@@ -493,6 +540,8 @@
       <td>
         <a href="#priest-vestments">Priest Vestments</a>
       </td>
+      <td>5 gp</td>
+      <td>10 lb.</td>
       <td>A religious outfit imbued with a divine blessing</td>
     </tr>
   
@@ -500,13 +549,12 @@
       <td>
         <a href="#sorcerer-s-tunic">Sorcerer's Tunic</a>
       </td>
+      <td>2 gp</td>
+      <td>4 lb.</td>
       <td>Light robes that help with channeling magic</td>
     </tr>
   
 </table>
-
-
-  
 
 <div class="item">
 
@@ -523,6 +571,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>2 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>12 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>10 + Strength</dd>
     
@@ -535,8 +589,6 @@
 
 
 </div>
-
-  
 
 <div class="item">
 
@@ -553,6 +605,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>8 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>55 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>11 + Strength</dd>
     
@@ -565,8 +623,6 @@
 
 
 </div>
-
-  
 
 <div class="item">
 
@@ -583,6 +639,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>20 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>40 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>11 + Strength</dd>
     
@@ -596,7 +658,39 @@
 
 </div>
 
-  
+<div class="item">
+
+<h3 id="common-clothes">
+    Common Clothes
+</h3>
+
+
+
+
+
+
+
+
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>5 sp</dd>
+    
+        <dt>Weight</dt>
+        <dd>3 lb.</dd>
+    
+        <dt>Defense</dt>
+        <dd>10 + Agility</dd>
+    
+    </dl>
+
+
+<p>You’re wearing normal clothes, so you don’t look suspicious.</p>
+
+
+
+
+</div>
 
 <div class="item">
 
@@ -613,6 +707,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>2 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>10 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>10 + Agility</dd>
     
@@ -625,38 +725,6 @@
 
 
 </div>
-
-  
-
-<div class="item">
-
-<h3 id="light-clothing">
-    Light Clothing
-</h3>
-
-
-
-
-
-
-
-
-    <dl class="tags">
-    
-        <dt>Defense</dt>
-        <dd>10 + Agility</dd>
-    
-    </dl>
-
-
-<p>You’re wearing normal clothes, so you don’t look suspicious.</p>
-
-
-
-
-</div>
-
-  
 
 <div class="item">
 
@@ -673,6 +741,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>2 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>2 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>10 + Agility</dd>
     
@@ -685,8 +759,6 @@
 
 
 </div>
-
-  
 
 <div class="item">
 
@@ -703,6 +775,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>10 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>20 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>9 + Intellect</dd>
     
@@ -715,8 +793,6 @@
 
 
 </div>
-
-  
 
 <div class="item">
 
@@ -733,6 +809,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>2 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>5 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>9 + Intellect</dd>
     
@@ -745,8 +827,6 @@
 
 
 </div>
-
-  
 
 <div class="item">
 
@@ -763,6 +843,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>5 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>10 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>7 + Intellect</dd>
     
@@ -776,12 +862,10 @@
 
 </div>
 
-  
-
 <div class="item">
 
-<h3 id="fine-clothing">
-    Fine Clothing
+<h3 id="fine-clothes">
+    Fine Clothes
 </h3>
 
 
@@ -792,6 +876,12 @@
 
 
     <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>15 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>6 lb.</dd>
     
         <dt>Defense</dt>
         <dd>9 + Spirit</dd>
@@ -805,8 +895,6 @@
 
 
 </div>
-
-  
 
 <div class="item">
 
@@ -823,6 +911,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>5 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>10 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>9 + Spirit</dd>
     
@@ -835,8 +929,6 @@
 
 
 </div>
-
-  
 
 <div class="item">
 
@@ -853,6 +945,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>2 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>4 lb.</dd>
+    
         <dt>Defense</dt>
         <dd>7 + Spirit</dd>
     
@@ -866,16 +964,13 @@
 
 </div>
 
-
-
-
-
-
 <h2 id="weapons">Weapons</h2>
 
 <table>
   <tr>
     <th>Name</th>
+    <th>Cost</th>
+    <th>Weight</th>
     <th>Description</th>
   </tr>
   
@@ -883,6 +978,8 @@
       <td>
         <a href="#amulet">Amulet</a>
       </td>
+      <td>5 gp</td>
+      <td>1 lb.</td>
       <td>A holy symbol or talisman that bears protective magic</td>
     </tr>
   
@@ -890,6 +987,8 @@
       <td>
         <a href="#bludgeon">Bludgeon</a>
       </td>
+      <td>4 gp</td>
+      <td>5 lb.</td>
       <td>A one-handed axe, club, or mace for smashing foes</td>
     </tr>
   
@@ -897,6 +996,8 @@
       <td>
         <a href="#bow">Bow</a>
       </td>
+      <td>10 gp</td>
+      <td>3 lb.</td>
       <td>A classic bow and arrow for long-range sniping</td>
     </tr>
   
@@ -904,6 +1005,8 @@
       <td>
         <a href="#crossbow">Crossbow</a>
       </td>
+      <td>20 gp</td>
+      <td>5 lb.</td>
       <td>A mechanical crossbow that fires slow but powerful shots</td>
     </tr>
   
@@ -911,6 +1014,8 @@
       <td>
         <a href="#dagger">Dagger</a>
       </td>
+      <td>1 gp</td>
+      <td>1 lb.</td>
       <td>A small bladed weapon that’s cheap and easy to conceal</td>
     </tr>
   
@@ -918,6 +1023,8 @@
       <td>
         <a href="#heavy-weapon">Heavy Weapon</a>
       </td>
+      <td>15 gp</td>
+      <td>10 lb.</td>
       <td>A two-handed greatsword, maul, or axe for heavy strikes</td>
     </tr>
   
@@ -925,6 +1032,8 @@
       <td>
         <a href="#orb">Orb</a>
       </td>
+      <td>20 gp</td>
+      <td>3 lb.</td>
       <td>A magical orb or crystal that helps in controlling magic</td>
     </tr>
   
@@ -932,6 +1041,8 @@
       <td>
         <a href="#polearm">Polearm</a>
       </td>
+      <td>2 gp</td>
+      <td>5 lb.</td>
       <td>A long polearm, such as a spear, halberd, or glaive</td>
     </tr>
   
@@ -939,6 +1050,8 @@
       <td>
         <a href="#shield">Shield</a>
       </td>
+      <td>10 gp</td>
+      <td>6 lb.</td>
       <td>A kite shield, round shield, or buckler for blocking attacks</td>
     </tr>
   
@@ -946,6 +1059,8 @@
       <td>
         <a href="#staff">Staff</a>
       </td>
+      <td>5 gp</td>
+      <td>4 lb.</td>
       <td>A walking staff or quarterstaff, perfect for channeling spells</td>
     </tr>
   
@@ -953,6 +1068,8 @@
       <td>
         <a href="#sword">Sword</a>
       </td>
+      <td>10 gp</td>
+      <td>3 lb.</td>
       <td>A one-handed sword, good for both slashing and thrusting</td>
     </tr>
   
@@ -960,6 +1077,8 @@
       <td>
         <a href="#throwing-weapon">Throwing Weapon</a>
       </td>
+      <td>1 gp</td>
+      <td>4 lb.</td>
       <td>A javelin, throwing axe, bola, or other thrown weapon</td>
     </tr>
   
@@ -967,6 +1086,8 @@
       <td>
         <a href="#tome">Tome</a>
       </td>
+      <td>25 gp</td>
+      <td>5 lb.</td>
       <td>A book of eldritch secrets that holds incantations for spells</td>
     </tr>
   
@@ -974,6 +1095,8 @@
       <td>
         <a href="#unarmed">Unarmed</a>
       </td>
+      <td>-</td>
+      <td>-</td>
       <td>A punch or kick, weak but available while unarmed</td>
     </tr>
   
@@ -981,13 +1104,12 @@
       <td>
         <a href="#wand">Wand</a>
       </td>
+      <td>10 gp</td>
+      <td>1 lb.</td>
       <td>A small wand, scepter, or baton useful for casting spells</td>
     </tr>
   
 </table>
-
-
-  
 
 <div class="item">
 
@@ -1008,6 +1130,16 @@
 
 
 
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>5 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>1 lb.</dd>
+    
+    </dl>
+
 
 <p>While wielding an amulet, you have a +2 bonus to your Spirit DC.</p>
 
@@ -1015,9 +1147,9 @@
 
 
 </div>
-  
-  <h4>Amulet Feats</h4>
-  <table>
+
+<h4>Amulet Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -1031,7 +1163,7 @@
           </td>
           <td>
             
-              <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg">
+              <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg" />
             
           </td>
           <td>You are hard to affect with dangerous spiritual magic spells</td>
@@ -1045,7 +1177,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You grant minor protections to an ally you affect with a spell</td>
@@ -1059,7 +1191,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You protect a creature or location from evil spirits</td>
@@ -1073,7 +1205,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You protect your ally with a shimmering forcefield</td>
@@ -1174,8 +1306,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="bludgeon">
@@ -1197,6 +1327,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>4 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>5 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Melee weapon</dd>
     
@@ -1217,9 +1353,9 @@
 
 
 </div>
-  
-  <h4>Bludgeon Feats</h4>
-  <table>
+
+<h4>Bludgeon Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -1241,7 +1377,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You crush a foe’s armor, weakening them for the future</td>
@@ -1255,7 +1391,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You knock a foe off-balance, making them easier to hit</td>
@@ -1269,7 +1405,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You dual-wield bludgeons by striking with a flurry of blows</td>
@@ -1374,8 +1510,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="bow">
@@ -1397,6 +1531,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>10 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>3 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Ranged weapon</dd>
     
@@ -1415,9 +1555,9 @@
 
 
 </div>
-  
-  <h4>Bow Feats</h4>
-  <table>
+
+<h4>Bow Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -1459,7 +1599,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You load multiple arrows on your bow and fire them all at once</td>
@@ -1473,7 +1613,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You fire more accurately by planting your feet on the ground</td>
@@ -1570,8 +1710,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="crossbow">
@@ -1630,6 +1768,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>20 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>5 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Ranged weapon</dd>
     
@@ -1651,9 +1795,9 @@
 
 
 </div>
-  
-  <h4>Crossbow Feats</h4>
-  <table>
+
+<h4>Crossbow Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -1703,7 +1847,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You instantly ready your crossbow at the start of a fight</td>
@@ -1717,7 +1861,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>Your powerful bolts pierce through nearby targets</td>
@@ -1731,7 +1875,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You prepare your crossbow to fire while sprinting</td>
@@ -1808,8 +1952,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="dagger">
@@ -1864,6 +2006,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>1 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>1 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Melee weapon</dd>
     
@@ -1879,9 +2027,9 @@
 
 
 </div>
-  
-  <h4>Dagger Feats</h4>
-  <table>
+
+<h4>Dagger Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -1927,7 +2075,7 @@
           </td>
           <td>
             
-              <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg">
+              <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg" />
             
           </td>
           <td>You can sneak in dagger strikes after your enemy gets hit</td>
@@ -1941,7 +2089,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You parry attacks with your dagger, using it like a shield</td>
@@ -2024,8 +2172,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="heavy-weapon">
@@ -2047,6 +2193,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>15 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>10 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Melee weapon</dd>
     
@@ -2062,9 +2214,9 @@
 
 
 </div>
-  
-  <h4>Heavy Weapon Feats</h4>
-  <table>
+
+<h4>Heavy Weapon Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -2128,7 +2280,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You make powerful, heavy swings that knock your enemy back</td>
@@ -2142,7 +2294,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You are an expert at defeating giant monsters with giant weapons</td>
@@ -2156,7 +2308,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You make an overhead swing that drives your enemy into the ground</td>
@@ -2219,8 +2371,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="orb">
@@ -2240,6 +2390,16 @@
 
 
 
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>20 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>3 lb.</dd>
+    
+    </dl>
+
 
 <p>Orbs shine with a dim glow, casting dim light out to 10 feet.</p>
 
@@ -2247,9 +2407,9 @@
 
 
 </div>
-  
-  <h4>Orb Feats</h4>
-  <table>
+
+<h4>Orb Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -2388,8 +2548,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="polearm">
@@ -2411,6 +2569,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>2 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>5 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Melee weapon</dd>
     
@@ -2428,9 +2592,9 @@
 
 
 </div>
-  
-  <h4>Polearm Feats</h4>
-  <table>
+
+<h4>Polearm Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -2496,7 +2660,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You prepare to intercept an imminent charge</td>
@@ -2510,7 +2674,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You strike with increased accuracy against a enemy that can’t reach you</td>
@@ -2524,7 +2688,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You trip a creature using the hook on the end of your polearm</td>
@@ -2575,8 +2739,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="shield">
@@ -2596,6 +2758,16 @@
 
 
 
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>10 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>6 lb.</dd>
+    
+    </dl>
+
 
 <p>While wielding a shield, you calculate your Defense with Strength, no matter what apparel you’re wearing. While wielding a shield and wearing heavy armor, you have a +1 bonus to Defense.</p>
 
@@ -2603,9 +2775,9 @@
 
 
 </div>
-  
-  <h4>Shield Feats</h4>
-  <table>
+
+<h4>Shield Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -2689,7 +2861,7 @@
           </td>
           <td>
             
-              <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg">
+              <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg" />
             
           </td>
           <td>You cover your allies with your shield, blocking attacks against them</td>
@@ -2746,8 +2918,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="staff">
@@ -2769,6 +2939,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>5 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>4 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Melee weapon</dd>
     
@@ -2784,9 +2960,9 @@
 
 
 </div>
-  
-  <h4>Staff Feats</h4>
-  <table>
+
+<h4>Staff Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -2876,7 +3052,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You gather power in your staff, preparing for an epic spell</td>
@@ -2890,7 +3066,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You are an expert at fighting with a staff in close quarters</td>
@@ -2929,8 +3105,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="sword">
@@ -2954,6 +3128,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>10 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>3 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Melee weapon</dd>
     
@@ -2973,9 +3153,9 @@
 
 
 </div>
-  
-  <h4>Sword Feats</h4>
-  <table>
+
+<h4>Sword Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -3059,7 +3239,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You enter a fencing stance that lets you strike quickly and accurately</td>
@@ -3085,7 +3265,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You lunge forward with a sword for extra reach</td>
@@ -3117,8 +3297,6 @@
       
     
   </table>
-
-  
 
 <div class="item">
 
@@ -3180,6 +3358,12 @@
 
     <dl class="tags">
     
+        <dt>Cost</dt>
+        <dd>1 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>4 lb.</dd>
+    
         <dt>Type</dt>
         <dd>Melee weapon</dd>
     
@@ -3195,9 +3379,9 @@
 
 
 </div>
-  
-  <h4>Throwing Weapon Feats</h4>
-  <table>
+
+<h4>Throwing Weapon Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -3287,7 +3471,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You call a throwing weapon back to your hand after an attack</td>
@@ -3313,7 +3497,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>Your throwing weapon entangles an enemy, slowing them down</td>
@@ -3340,8 +3524,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="tome">
@@ -3361,6 +3543,16 @@
 
 
 
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>25 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>5 lb.</dd>
+    
+    </dl>
+
 
 <p>While wielding a tome, if you can currently read the contents of the tome, you have advantage on Intellect+Arcana rolls to identify magic of the type described in the tome.</p>
 
@@ -3368,9 +3560,9 @@
 
 
 </div>
-  
-  <h4>Tome Feats</h4>
-  <table>
+
+<h4>Tome Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -3478,7 +3670,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You read an incantation from your tome, powering up your next speed</td>
@@ -3492,7 +3684,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>Your tome has a bit of information on everything, if you can find it</td>
@@ -3513,8 +3705,6 @@
     
   </table>
 
-  
-
 <div class="item">
 
 <h3 id="unarmed">
@@ -3529,6 +3719,12 @@
 
 
     <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>-</dd>
+    
+        <dt>Weight</dt>
+        <dd>-</dd>
     
         <dt>Type</dt>
         <dd>Melee weapon</dd>
@@ -3545,9 +3741,9 @@
 
 
 </div>
-  
-  <h4>Unarmed Feats</h4>
-  <table>
+
+<h4>Unarmed Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -3649,7 +3845,7 @@
           </td>
           <td>
             
-              <img title="Free" class="inline-icon" src="assets/svg/free.svg">
+              <img title="Free" class="inline-icon" src="assets/svg/free.svg" />
             
           </td>
           <td>You grab an enemy that you get a powerful hit on</td>
@@ -3687,8 +3883,6 @@
       
     
   </table>
-
-  
 
 <div class="item">
 
@@ -3748,6 +3942,16 @@
 
 
 
+    <dl class="tags">
+    
+        <dt>Cost</dt>
+        <dd>10 gp</dd>
+    
+        <dt>Weight</dt>
+        <dd>1 lb.</dd>
+    
+    </dl>
+
 
 <p>While wielding a wand, you can use the <strong>Magic Sparks</strong> power.</p>
 
@@ -3755,9 +3959,9 @@
 
 
 </div>
-  
-  <h4>Wand Feats</h4>
-  <table>
+
+<h4>Wand Feats</h4>
+<table>
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -3865,7 +4069,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You blast a target with a powerful bolt of eldritch force</td>
@@ -3879,7 +4083,7 @@
           </td>
           <td>
             
-              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg">
+              <img title="1-Action" class="inline-icon" src="assets/svg/1-action.svg" />
             
           </td>
           <td>You fire a magic missile at your target that never misses</td>
@@ -3893,7 +4097,7 @@
           </td>
           <td>
             
-              <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg">
+              <img title="Reaction" class="inline-icon" src="assets/svg/reaction.svg" />
             
           </td>
           <td>Your wand skills let you easily recover from miscasts</td>
